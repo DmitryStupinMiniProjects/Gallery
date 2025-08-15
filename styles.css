@@ -1,0 +1,84 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery__item {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery__item:hover {
+  transform: scale(1.03);
+}
+
+/* Модалка */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal__img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal__prev,
+.modal__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.modal__prev {
+  left: 20px;
+}
+
+.modal__next {
+  right: 20px;
+}

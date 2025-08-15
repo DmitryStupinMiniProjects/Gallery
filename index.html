@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Галерея картинок</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<header class="header">
+  <h1 class="title">Галерея картинок</h1>
+</header>
+
+<main>
+  <div class="gallery" data-js-gallery>
+    <img src="./images/1.jpg" alt="Фото 1" class="gallery__item" />
+    <img src="./images/2.jpg  " alt="Фото 2" class="gallery__item" />
+    <img src="./images/3.jpg" alt="Фото 3" class="gallery__item" />
+    <img src="./images/4.jpg" alt="Фото 4" class="gallery__item" />
+    <img src="./images/5.jpg" alt="Фото 5" class="gallery__item" />
+  </div>
+</main>
+
+<div class="modal" data-js-modal>
+  <span class="modal__close" data-js-modal-close>&times;</span>
+  <img class="modal__img" data-js-modal-img src="" alt="" />
+  <button class="modal__prev" data-js-modal-prev>&#10094;</button>
+  <button class="modal__next" data-js-modal-next>&#10095;</button>
+</div>
+<script src="./script.js" type="module" defer></script>
+</body>
+</html>
